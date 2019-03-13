@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8c2ac7bf-b844-47ce-8e8d-2db9f909bfb0" name="Default" comment="" />
+    <list default="true" id="8c2ac7bf-b844-47ce-8e8d-2db9f909bfb0" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/static/uploads/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,14 +28,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/netVis.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-456">
-              <caret line="23" column="14" lean-forward="true" selection-start-line="22" selection-start-column="3" selection-end-line="23" selection-end-column="14" />
+              <caret line="23" column="14" selection-start-line="22" selection-start-column="3" selection-end-line="23" selection-end-column="14" />
               <folding>
                 <element signature="e#15#26#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="24">
+              <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -84,7 +96,7 @@
         <entry file="file://$PROJECT_DIR$/mongo.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="384">
-              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
               <folding>
                 <element signature="e#15#29#0" expanded="true" />
               </folding>
@@ -161,13 +173,13 @@
         <option value="$PROJECT_DIR$/utl.py" />
         <option value="$PROJECT_DIR$/util.py" />
         <option value="$PROJECT_DIR$/calNetwork.py" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/findsubgraph.py" />
         <option value="$PROJECT_DIR$/myutil.py" />
         <option value="$PROJECT_DIR$/commuities.py" />
         <option value="$PROJECT_DIR$/mongo.py" />
         <option value="$PROJECT_DIR$/small.json" />
         <option value="$PROJECT_DIR$/netVis.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -345,12 +357,12 @@
       <workItem from="1552296675003" duration="1164000" />
       <workItem from="1552377731883" duration="7671000" />
       <workItem from="1552394011685" duration="5676000" />
-      <workItem from="1552441381098" duration="4074000" />
+      <workItem from="1552441381098" duration="4316000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42748000" />
+    <option name="totallyTimeSpent" value="42990000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -363,8 +375,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23123324" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23123324" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -376,7 +389,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32938644" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32975295" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.5630027" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.47319034" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.502445" side_tool="true" weight="0.20667385" />
       <window_info anchor="bottom" id="Python Console" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
@@ -440,13 +453,6 @@
     <entry file="file://D:/software/anconda2/Lib/site-packages/igraph/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1" selection-start-column="1" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/aa.jpg" />
     <entry file="file://$PROJECT_DIR$/static/uploads/abc.jpg" />
     <entry file="file://$PROJECT_DIR$/static/uploads/abc.json" />
@@ -486,7 +492,7 @@
     <entry file="file://$PROJECT_DIR$/mongo.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="384">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
           <folding>
             <element signature="e#15#29#0" expanded="true" />
           </folding>
@@ -507,10 +513,17 @@
     <entry file="file://$PROJECT_DIR$/netVis.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-456">
-          <caret line="23" column="14" lean-forward="true" selection-start-line="22" selection-start-column="3" selection-end-line="23" selection-end-column="14" />
+          <caret line="23" column="14" selection-start-line="22" selection-start-column="3" selection-end-line="23" selection-end-column="14" />
           <folding>
             <element signature="e#15#26#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
         </state>
       </provider>
     </entry>
