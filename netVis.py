@@ -19,10 +19,16 @@ app = Flask(__name__)
 
 G = nx.Graph()
 
+
 def testObj(result):
-    # if(result['nodes']&&result['link']):
-    #     pass
-    pass
+    try:
+        if (result['nodes']):
+            pass
+        if (result['links']):
+            pass
+    except:
+        return 'fail'
+
 
 def parallel(choose_subgraph, sub_g, G):
     edge_id_list = []
@@ -203,7 +209,8 @@ def finding():
             sub_len_nodes = myutil.find_number_of_nodes(skeleton_sub)  # 查询图的节点数
             sub_len_edges = myutil.find_number_of_edges(skeleton_sub)  # 查询图的边数
 
-            print nx.algorithms.distance_measures.center(nx.subgraph(G, c))
+            print
+            nx.algorithms.distance_measures.center(nx.subgraph(G, c))
             # actual_degrees = myutil.sort_degree(nx.subgraph(G, c))  # 对度范围进行排序
             # actual_sub_degrees = myutil.sort_degree(skeleton_sub)  # 对度范围进行排序
 
@@ -267,7 +274,8 @@ def finding():
                 # # 如果节点个数一致则匹配列表中
                 if (len(result_inter) == sub_len_nodes):
                     choose_subgraph.append(nodes)
-            print len(choose_subgraph)
+            print
+            len(choose_subgraph)
 
             partial_work = partial(parallel, sub_g=skeleton_sub, G=G)
             pool = Pool(4)  # 创建拥有4个进程数量的进程池
@@ -336,7 +344,8 @@ def getnodes():
     attrList = nx.get_edge_attributes(G, 'id')
     new_dict = {v: k for k, v in attrList.items()}
     for key, value in counter.items():
-        print new_dict[key]
+        print
+        new_dict[key]
     return jsonify({})
 
 
@@ -349,13 +358,12 @@ def test():
         upload_path = os.path.join(basepath, 'static\uploads', filename)  # 合并路径
         request.files['file'].save(upload_path)
         with open(upload_path) as fi:
-            result = json.load(fi)
-            try:
-                # 对数据格式进行简单的判断
-                if (result['nodes']):  # nodes数据不为空的,否则会报错
-                    mongo.importJson(result, filename[:-5])  # 将json数据导入到数据库中
-                    return jsonify({'status': 'success'})
-            except:
+            result = json.load(fi)  # 返回dict
+            # 简单对数据进行判断
+            if (result.has_key('nodes') and result.has_key('links')):
+                mongo.importJson(result, filename[:-5])  # 将json数据导入到数据库中
+                return jsonify({'status': 'success'})
+            else:
                 return jsonify({'status': '数据格式不符合规范'})
     except:
         return jsonify({'status': 'fail'})
